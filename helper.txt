@@ -1,0 +1,9 @@
+cmd 
+code .
+
+firebase deploy  -> pt deploy in cloud
+ALT+L+O   -> live server
+
+dupa ce modifici codul
+git commit cu un mesaj
+git sync pentru a trimite codul in cloud
