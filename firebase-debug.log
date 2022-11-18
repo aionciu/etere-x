@@ -1,0 +1,168 @@
+[debug] [2022-11-18T16:32:47.311Z] ----------------------------------------------------------------------
+[debug] [2022-11-18T16:32:47.314Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-11-18T16:32:47.314Z] CLI Version:   11.16.0
+[debug] [2022-11-18T16:32:47.314Z] Platform:      win32
+[debug] [2022-11-18T16:32:47.315Z] Node Version:  v18.12.1
+[debug] [2022-11-18T16:32:47.316Z] Time:          Fri Nov 18 2022 18:32:47 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-11-18T16:32:47.316Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-18T16:32:47.320Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-11-18T16:32:47.443Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-18T16:32:47.444Z] > authorizing via signed-in user (marian.ionciu@gmail.com)
+[debug] [2022-11-18T16:32:47.444Z] [iam] checking project smart-house-energy for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-18T16:32:47.446Z] > refreshing access token with scopes: []
+[debug] [2022-11-18T16:32:47.447Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-18T16:32:47.448Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-11-18T16:33:08.494Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2022-11-18T16:33:08.515Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-11-18T16:33:08.517Z] > refreshing access token with scopes: []
+[debug] [2022-11-18T16:33:08.519Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-18T16:33:08.520Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-18T16:33:29.562Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-11-18T16:33:29.568Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
+    at refreshTokens (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:23)
+    at async Client.addAuthHeader (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
+    at async Client.request (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
+    at async getFirebaseProject (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async getDefaultHostingSite (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:74:9)
+    at async C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:214:17
+[error] 
+[error] Error: Failed to get Firebase project smart-house-energy. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-11-18T16:33:54.440Z] ----------------------------------------------------------------------
+[debug] [2022-11-18T16:33:54.443Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-11-18T16:33:54.443Z] CLI Version:   11.16.0
+[debug] [2022-11-18T16:33:54.444Z] Platform:      win32
+[debug] [2022-11-18T16:33:54.444Z] Node Version:  v18.12.1
+[debug] [2022-11-18T16:33:54.445Z] Time:          Fri Nov 18 2022 18:33:54 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-11-18T16:33:54.445Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-18T16:33:54.449Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-11-18T16:33:54.578Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-18T16:33:54.578Z] > authorizing via signed-in user (marian.ionciu@gmail.com)
+[debug] [2022-11-18T16:33:54.579Z] [iam] checking project smart-house-energy for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-18T16:33:54.580Z] > refreshing access token with scopes: []
+[debug] [2022-11-18T16:33:54.581Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-18T16:33:54.581Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-11-18T16:34:15.627Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2022-11-18T16:34:15.629Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-11-18T16:34:15.630Z] > refreshing access token with scopes: []
+[debug] [2022-11-18T16:34:15.631Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-18T16:34:15.632Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-18T16:34:36.688Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-11-18T16:34:36.695Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
+    at refreshTokens (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:23)
+    at async Client.addAuthHeader (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
+    at async Client.request (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
+    at async getFirebaseProject (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async getDefaultHostingSite (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:74:9)
+    at async C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:214:17
+[error] 
+[error] Error: Failed to get Firebase project smart-house-energy. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-11-18T16:35:24.848Z] ----------------------------------------------------------------------
+[debug] [2022-11-18T16:35:24.850Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-11-18T16:35:24.851Z] CLI Version:   11.16.0
+[debug] [2022-11-18T16:35:24.851Z] Platform:      win32
+[debug] [2022-11-18T16:35:24.851Z] Node Version:  v18.12.1
+[debug] [2022-11-18T16:35:24.852Z] Time:          Fri Nov 18 2022 18:35:24 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-11-18T16:35:24.852Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-18T16:35:24.855Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-11-18T16:35:24.967Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-18T16:35:24.967Z] > authorizing via signed-in user (marian.ionciu@gmail.com)
+[debug] [2022-11-18T16:35:24.967Z] [iam] checking project smart-house-energy for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-18T16:35:24.968Z] > refreshing access token with scopes: []
+[debug] [2022-11-18T16:35:24.969Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-18T16:35:24.969Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-11-18T16:35:46.022Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2022-11-18T16:35:46.024Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-11-18T16:35:46.026Z] > refreshing access token with scopes: []
+[debug] [2022-11-18T16:35:46.028Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-18T16:35:46.028Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-18T16:36:07.090Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-11-18T16:36:07.097Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
+    at refreshTokens (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:23)
+    at async Client.addAuthHeader (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
+    at async Client.request (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
+    at async getFirebaseProject (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async getDefaultHostingSite (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:74:9)
+    at async C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:214:17
+[error] 
+[error] Error: Failed to get Firebase project smart-house-energy. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-11-18T16:37:19.516Z] ----------------------------------------------------------------------
+[debug] [2022-11-18T16:37:19.518Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-11-18T16:37:19.519Z] CLI Version:   11.16.0
+[debug] [2022-11-18T16:37:19.519Z] Platform:      win32
+[debug] [2022-11-18T16:37:19.519Z] Node Version:  v18.12.1
+[debug] [2022-11-18T16:37:19.520Z] Time:          Fri Nov 18 2022 18:37:19 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-11-18T16:37:19.520Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-18T16:37:19.524Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-11-18T16:37:19.641Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-18T16:37:19.641Z] > authorizing via signed-in user (marian.ionciu@gmail.com)
+[debug] [2022-11-18T16:37:19.642Z] [iam] checking project smart-house-energy for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-18T16:37:19.642Z] > refreshing access token with scopes: []
+[debug] [2022-11-18T16:37:19.644Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-18T16:37:19.644Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2022-11-18T16:37:40.698Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2022-11-18T16:37:40.717Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-11-18T16:37:40.720Z] > refreshing access token with scopes: []
+[debug] [2022-11-18T16:37:40.722Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-18T16:37:40.722Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-18T16:38:01.769Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2022-11-18T16:38:01.776Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
+    at refreshTokens (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:23)
+    at async Client.addAuthHeader (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
+    at async Client.request (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
+    at async getFirebaseProject (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async getDefaultHostingSite (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:74:9)
+    at async C:\Users\maria\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:214:17
+[error] 
+[error] Error: Failed to get Firebase project smart-house-energy. Please make sure the project exists and your account has permission to access it.
