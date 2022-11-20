@@ -12,6 +12,11 @@
   border: 1px dotted #007ab7;
 }
 
+.sm a{
+  font-size: 12px;
+  color: #444444;
+  line-height: 0;
+}
 
 /*--------------------------------------------------------------
 # General
